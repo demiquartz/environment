@@ -1,0 +1,82 @@
+{
+    "editor.renderWhitespace": "all",
+    "git.path": "C:/msys64/usr/bin/git.bat",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.defaultProfile.windows": "MINGW64",
+    "terminal.integrated.env.windows": {
+        "MSYSTEM": "MINGW64",
+        "CHERE_INVOKING": "1"
+    },
+    "terminal.integrated.profiles.windows": {
+        "MSYS": {
+            "env": {
+                "MSYSTEM": "MSYS",
+                "CHERE_INVOKING": "1"
+            },
+            "path": [
+                "C:/msys64/usr/bin/bash.exe"
+            ],
+            "args": [
+                "--login"
+            ],
+            "overrideName": true
+        },
+        "MINGW32": {
+            "env": {
+                "MSYSTEM": "MINGW32",
+                "CHERE_INVOKING": "1"
+            },
+            "path": [
+                "C:/msys64/usr/bin/bash.exe"
+            ],
+            "args": [
+                "--login"
+            ],
+            "overrideName": true
+        },
+        "MINGW64": {
+            "env": {
+                "MSYSTEM": "MINGW64",
+                "CHERE_INVOKING": "1"
+            },
+            "path": [
+                "C:/msys64/usr/bin/bash.exe"
+            ],
+            "args": [
+                "--login"
+            ],
+            "overrideName": true
+        },
+        "CLANG64": {
+            "env": {
+                "MSYSTEM": "CLANG64",
+                "CHERE_INVOKING": "1"
+            },
+            "path": [
+                "C:/msys64/usr/bin/bash.exe"
+            ],
+            "args": [
+                "--login"
+            ],
+            "overrideName": true
+        },
+        "UCRT64": {
+            "env": {
+                "MSYSTEM": "UCRT64",
+                "CHERE_INVOKING": "1"
+            },
+            "path": [
+                "C:/msys64/usr/bin/bash.exe"
+            ],
+            "args": [
+                "--login"
+            ],
+            "overrideName": true
+        },
+        "Command Prompt": null,
+        "Git Bash": null,
+        "PowerShell": null
+    },
+    "C_Cpp.updateChannel": "Insiders"
+}
