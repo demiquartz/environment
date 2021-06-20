@@ -1,5 +1,6 @@
 {
     "editor.renderWhitespace": "all",
+    "files.eol": "\n",
     "git.path": "C:/msys64/usr/bin/git.bat",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
