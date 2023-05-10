@@ -78,6 +78,5 @@
         "Command Prompt": null,
         "Git Bash": null,
         "PowerShell": null
-    },
-    "C_Cpp.updateChannel": "Insiders"
+    }
 }
