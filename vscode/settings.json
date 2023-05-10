@@ -23,19 +23,6 @@
             ],
             "overrideName": true
         },
-        "MINGW32": {
-            "env": {
-                "MSYSTEM": "MINGW32",
-                "CHERE_INVOKING": "1"
-            },
-            "path": [
-                "C:/msys64/usr/bin/bash.exe"
-            ],
-            "args": [
-                "--login"
-            ],
-            "overrideName": true
-        },
         "MINGW64": {
             "env": {
                 "MSYSTEM": "MINGW64",
