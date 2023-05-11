@@ -1,23 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 
-execute_process(COMMAND git describe --tags --abbrev=0        RESULT_VARIABLE VerResult OUTPUT_VARIABLE VerString ERROR_QUIET OUTPUT_STRIP_TRAILING_WHITESPACE)
-execute_process(COMMAND git describe --tags --abbrev=7 --long RESULT_VARIABLE RevResult OUTPUT_VARIABLE RevString ERROR_QUIET OUTPUT_STRIP_TRAILING_WHITESPACE)
-
-set(SysString a)
-
-if(${VerResult})
-    set(VerString 0.0.0)
-endif()
-
-if(${RevResult})
-    set(RevString 0.0.0-0-g0000000)
-endif()
-
-project(${SysString} VERSION ${VerString})
-set(PROJECT_BRIEF "Empty project")
-
-configure_file(version.hpp.in ${PROJECT_SOURCE_DIR}/version.hpp)
-configure_file(../Doxyfile.in ${PROJECT_SOURCE_DIR}/../Doxyfile)
+configure_file(version.hpp.in ${CMAKE_CURRENT_SOURCE_DIR}/version.hpp)
+configure_file(../Doxyfile.in ${CMAKE_CURRENT_SOURCE_DIR}/../Doxyfile)
 
 add_executable(${PROJECT_NAME})
 # add_library(${PROJECT_NAME} STATIC)
@@ -27,14 +11,14 @@ set_target_properties(${PROJECT_NAME}
 PROPERTIES
     CXX_EXTENSIONS NO
     LINK_FLAGS_RELEASE -s
-    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../bin
-    ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../lib
-    LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../lib
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin
+    ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib
+    LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib
 )
 
 target_include_directories(${PROJECT_NAME}
 PRIVATE
-    # ${PROJECT_SOURCE_DIR}/../include
+    ${PROJECT_SOURCE_DIR}/include
 )
 
 target_link_directories(${PROJECT_NAME}
