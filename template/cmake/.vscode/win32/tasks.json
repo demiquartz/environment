@@ -6,8 +6,8 @@
         {
             "label": "build all",
             "type": "shell",
-            "command": "./build.sh",
-            "args": ["Debug"],
+            "command": "./build.py",
+            "args": ["BuildType=Debug"],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -16,7 +16,7 @@
         {
             "label": "clean all",
             "type": "shell",
-            "command": "./clean.sh",
+            "command": "./clean.py",
             "args": [],
             "group": "build"
         }
