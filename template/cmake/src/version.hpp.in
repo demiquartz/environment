@@ -1,5 +1,5 @@
 /** @file
- * @brief バージョン情報
+ * @brief Version information
  * @author ${name}
  * @copyright Copyright (c) ${year} ${name} &lt;${email}&gt; @n
  * Distributed under the MIT License (See accompanying file LICENSE
@@ -8,18 +8,18 @@
 #ifndef VERSION_HPP
 #define VERSION_HPP
 
-/// システム名
+/// System name
 #define SYSNAME  "${SysString}"
-/// バージョン文字列
+/// Version string
 #define VERSION  "${VerString}"
-/// リビジョン文字列
+/// Revision string
 #define REVISION "${RevString}"
 
-/// メジャーバージョン番号
+/// Major version number
 #define VERSION_MAJOR ${PROJECT_VERSION_MAJOR}
-/// マイナーバージョン番号
+/// Minor version number
 #define VERSION_MINOR ${PROJECT_VERSION_MINOR}
-/// パッチバージョン番号
+/// Patch version number
 #define VERSION_PATCH ${PROJECT_VERSION_PATCH}
 
 #endif // VERSION_HPP
