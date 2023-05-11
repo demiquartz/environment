@@ -8,7 +8,7 @@
             "name": "デバッグ実行",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/a.exe",
+            "program": "${workspaceFolder}/bin/a.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
