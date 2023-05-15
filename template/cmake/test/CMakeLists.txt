@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+find_package(Boost REQUIRED COMPONENTS unit_test_framework)
 include_directories(${PROJECT_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
 link_directories(${PROJECT_SOURCE_DIR}/lib ${Boost_LIBRARY_DIRS})
 link_libraries(${PROJECT_NAME} Boost::unit_test_framework)
